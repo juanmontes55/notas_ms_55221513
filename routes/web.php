@@ -14,12 +14,16 @@
 */
 
 $router->get('/', function () use ($router) {
-    echo '<h1>Hola mundo</h1>';
     return $router->app->version();
 });
 
-$router -> get('usuarios', 'UsuarioController@index');
-$router -> get('usuarios/{id}', 'UsuarioController@show');
-$router -> post('usuarios', 'UsuarioController@store');
-$router -> put('usuarios/{id}', 'UsuarioController@update');
-$router -> delete('usuarios/{id}', 'UsuarioController@destroy');
+$router -> get('estudiantes', 'EstudianteController@index');
+$router -> get('estudiantes/{codigo}', 'EstudiantesController@show');
+$router -> post('estudiantes', 'EstudianteController@store');
+$router -> put('estudiantes/{codigo}', 'EstudianteController@update');
+$router -> delete('estudiantes/{codigo}', 'EstudianteController@destroy');
+$router -> get('actividades', 'ActividadController@index');
+$router -> get('actividades/{id}', 'ActividadController@show');
+$router -> post('actividades', 'ActividadController@store');
+$router -> put('actividades/{id}', 'ActividadController@update');
+$router -> delete('actividades/{id}', 'ActividadController@destroy');

@@ -29,6 +29,7 @@ class EstudianteController extends Controller
     public function store(Request $request)
     {
         $estudiante = new Estudiante();
+        $estudiante -> codigo = $request -> input('codigo');
         $estudiante -> nombres = $request -> input('nombres');
         $estudiante -> apellidos = $request -> input('apellidos');
         $estudiante -> save();

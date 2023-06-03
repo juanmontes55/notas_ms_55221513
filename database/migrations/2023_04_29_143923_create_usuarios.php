@@ -11,12 +11,11 @@ return new class extends Migration
     //  */
     // public function up(): void
     // {
-    //     Schema::create('usuarios', function (Blueprint $table) {
-    //         // $table->id();
-    //         $table->increments('id');
-    //         $table->string('name', 200);
-    //         $table->string('username', 150);
-    //         $table->string('password', 250);
+    //     Schema::create('estudiantes', function (Blueprint $table) {
+    //         // $table->icodigo();
+    //         $table->increments('codigo');
+    //         $table->string('nombres', 250);
+    //         $table->string('apellidos', 250);
     //         $table->timestamps();
     //     });
     // }
@@ -26,6 +25,6 @@ return new class extends Migration
     //  */
     // public function down(): void
     // {
-    //     Schema::dropIfExists('usuarios');
+    //     Schema::dropIfExists('estudiantes');
     // }
 };

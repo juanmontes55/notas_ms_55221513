@@ -64,7 +64,6 @@ class ActividadController extends Controller
         $actividad = Actividad::find($id);
         $actividad -> descripcion = $request -> input('descripcion');
         $actividad -> nota = $request -> input('nota');
-        $actividad -> codigoEstudiante = $request -> input('codigoEstudiante');
         $actividad -> save();
         return response(json_encode([
             "data" => "Actividad actualizada"
